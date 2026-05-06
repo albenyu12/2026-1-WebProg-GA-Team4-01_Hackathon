@@ -69,8 +69,8 @@ function deleteNote(item) {
                 title.readOnly = false;
                 message.value = '';
                 message.readOnly = false;
-            })
-            .then(loadBoardCards());
+                loadBoardCards();
+            });
     }
 }
 
@@ -115,9 +115,9 @@ document.getElementById('left-side').addEventListener('click', (ev) => {
         .then(response => response.json())
         .then(data => {
             
-            cardTitle.value = data.title;
-            cardTitle.readOnly = true;
-            cardMessage.value = data.message;
-            cardMessage.readOnly = true;
+            title.value = data.title;
+            title.readOnly = true;
+            message.value = data.message;
+            message.readOnly = true;
         });
 })
