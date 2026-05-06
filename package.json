@@ -1,0 +1,24 @@
+{
+  "name": "2026-1-webprog-ga-team4-01_hackathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albenyu12/2026-1-WebProg-GA-Team4-01_Hackathon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albenyu12/2026-1-WebProg-GA-Team4-01_Hackathon/issues"
+  },
+  "homepage": "https://github.com/albenyu12/2026-1-WebProg-GA-Team4-01_Hackathon#readme",
+  "dependencies": {
+    "better-sqlite3": "^12.9.0",
+    "express": "^5.2.1"
+  }
+}
