@@ -10,12 +10,24 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/light/style.css"
     />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="note-page">
         <header>
-            <h1>Notes</h1>
+            <h1>학생 페이지</h1>
+            <div class = "advice">   
+                <h2> 교수님 공지사항 </h2>
+                <div id="advice"></div>
+            </div>
+                <h2> 피드백 남기기 </h2>
             <div id="note-actions">
+                <select id = "categorySelect">
+                        <option value="">카테고리 선택</option>
+                        <option value="1">질문</option>
+                        <option value="2">좋았어요</option>
+                        <option value="3">이해 못함</option>
+                    </select>
                 <button class="note-action--create tooltip"
                     aria-label="새로운 노트 생성하기"
                     data-tooltip="새로운 노트 생성하기">
@@ -46,10 +58,13 @@
             </div>
             <div id="right-side">
                 <div class="form-group">
-                    <input class="form-control" id="input-title" placeholder="제목을 입력하세요">
-                    <textarea class="form-control" id="input-text" rows="2" placeholder="내용을 입력하세요"></textarea>
+                    <textarea class="form-control" id="input-text" rows="2" placeholder="피드백을 입력하세요"></textarea>
                 </div>
+                <button id="insertFeedback">확인</button>
             </div>
+            <h2> 내가 남긴 피드백 </h2>
+            <div id="myFeedback"></div>
+            <button id="changeFeedback">수정</button>
         </main>
     </div>
     <script src="script.js"></script>

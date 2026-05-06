@@ -1,0 +1,33 @@
+#changeFeedback{
+    display: block;
+    width: 5%;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background 0.3s;
+}
+
+#insertFeedback{
+    display: block;
+    width: 5%;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background 0.3s;
+}
+/* 
+button:hover{
+    background-color: #357abd;
+} */

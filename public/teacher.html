@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/light/style.css"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="note-page">
+        <header>
+            <h1>교수 페이지</h1>
+            <div id="note-actions">
+                <button class="note-action--create tooltip"
+                    aria-label="새로운 노트 생성하기"
+                    data-tooltip="새로운 노트 생성하기">
+                    <i class="ph-light ph-list-plus"></i>
+                </button>
+                <button class="note-action--modify tooltip"
+                    aria-label="선택한 노트 수정하기"
+                    data-tooltip="선택한 노트 수정하기">
+                    <i class="ph-light ph-note-pencil"></i>
+                </button>
+                <button class="note-action--delete tooltip"
+                    aria-label="선택한 노트 삭제하기"
+                    data-tooltip="선택한 노트 삭제하기">
+                    <i class="ph-light ph-trash"></i>
+                </button>
+                <button onclick="uploadPost()" class="note-action--complete tooltip"
+                    aria-label="노트 저장하기"
+                    data-tooltip="노트 저장하기">
+                    <i class="ph-light ph-check-circle"></i>
+                </button>
+                 <select id = "emotionSelect">
+                        <option value="">카테고리 선택</option>
+                        <option value="1">질문</option>
+                        <option value="2">좋았어요</option>
+                        <option value="3">이해 못함</option>
+                    </select>
+            </div>
+        </header>
+        <main>
+            <div id="left-side">
+                <div id="card-list">
+                    <!-- 결과가 보여질곳 -->
+                </div>
+            </div>
+            <div id="right-side">
+                <div class="form-group">
+                    <input class="form-control" id="input-title" placeholder="제목을 입력하세요">
+                    <textarea class="form-control" id="input-text" rows="2" placeholder="내용을 입력하세요"></textarea>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
