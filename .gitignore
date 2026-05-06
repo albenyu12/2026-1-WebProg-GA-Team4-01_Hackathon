@@ -1,0 +1,17 @@
+# 여기는 내가 git에서 예외처리하고 싶은 파일을 넣는 곳임
+.DS_Store
+
+# 각종 문서 파일
+*.docx
+*.pptx
+
+# node 모듈
+node_modules/
+
+# 각종 db파일
+*.db
+*.sqlite
+*.sqlite3
+
+# Credentials
+.env
